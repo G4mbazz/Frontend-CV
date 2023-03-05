@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>CV Sebastian</title>
+</head>
+<body>
+    <nav class ="menu">
+        <a href="index.html" class="nav-logo">Sebastian Gamboa</a>
+        <ul class="nav-menu">
+             <li class="nav-item">
+                 <a href="index.html" class="nav-link">Hem</a>
+                 </li>
+                    <li class="nav-item">
+                     <a href="aboutme.html" class="nav-link">Om Mig</a>
+                     </li>
+                     <li class="nav-item">
+                     <a href="experience.html" class="active">CV</a>
+                     </li>
+                    <li class="nav-item">
+                       <a href="projects.html" class="nav-link">Mina Projekt</a>
+                        </li>
+                      <li class="nav-item">
+                        <a href="contactme.html" class="nav-link">Kontakta Mig</a>
+                 </li>
+             </ul>
+                    <div class="mingus">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+             </div>
+        </nav>
+        
+         <script type="text/javascript">
+            const mingus = document.querySelector(".mingus");
+            const navMenu = document.querySelector(".nav-menu");
+            const navLink = document.querySelectorAll(".nav-link");
+            mingus.addEventListener("click", mobileMenu);
+            navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+            function mobileMenu() {
+            mingus.classList.toggle("active");
+            navMenu.classList.toggle("active");
+         }
+    
+            function closeMenu() {
+          mingus.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+        </script>
+                <div class="title_card"><h1>Utbildning</h1></div>
+                <div class="homepage">
+                    <div>
+                        <img src="Images\dotnet.png" alt=""> 
+                    </div>
+                    <div class="xplist">
+                        <ul>
+                            <li>C#</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                        </ul>
+        
+                    </div>
+                    <div class="content">
+                        <p>
+                            Systemutveckling inom .net C# samt grundläggande kunskap inom 
+                            html, css och javascript för frontend utveckling
+                        </p>
+                    </div>
+        
+                </div>
+        <div class="title_card"><h1>Erfarenhet</h1></div>
+        <div class="homepage">
+            <div></div>
+            <div class="content">
+                <p>
+                    här ska jag skriva min erfarenthet jag har här ska jag
+                     skriva min erfarenthet jag har här ska jag skriva
+                     min erfarenthet jag har här ska jag skriva min erfarenthet jag har 
+                </p>
+            </div>
+            <div></div>
+        </div>
+       
+</body>
+</html>
